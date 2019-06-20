@@ -111,5 +111,5 @@ def telegram(remitente, destinatario, mensaje):
     celda_plano = table.rows[1].cells[0]
     celda_plano.text = mensaje
     
-    document.save("{}{}.docx".format(destinatario, strftime("%Y%m%d%H%M%S%z", fechahora)))
+    document.save("\envios\{}{}.docx".format(destinatario, strftime("%Y%m%d%H%M%S%z", fechahora)))
 
